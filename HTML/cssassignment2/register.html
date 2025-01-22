@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input[type="text"]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: #45a049;
+        }
+        input[type="text"]:focus{
+            background-color:papayawhip;
+            color: rgb(9, 39, 65);
+        }
+        div{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 50%;
+            height: 50%;
+            margin-left: 25%;
+        }
+        body{
+            background-color:burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center; font-size: 30px; text-decoration: underline;">Registration Form</h3>
+    <div>
+        <form action="#">
+            <label for="fanme">First Name</label>
+            <input type="text" name="fname" placeholder="Your First Name..."/>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" placeholder="Your Last Name..."/>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Enter Email..."/>
+
+            <label for="mobile">Mobile</label>
+            <input type="text" name="mobile" placeholder="Enter Mobile No..."/>
+
+            <label for="skills">Skills</label>
+            <input type="text" name="skills" placeholder="Enter your skills..."/>
+
+            <label for="country">Country</label>
+            <input type="text" name="country" placeholder="Enter your country name..."/>
+            <br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="sex" value="male">Male            
+            <input type="radio" name="sex" value="female">Female
+            <br>
+            <br>
+            
+            <input type="submit" value="Submit"/>
+
+        </form>
+    </div>
+    
+</body>
+</html>

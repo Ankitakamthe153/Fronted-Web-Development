@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         <!--an unvisited link will be green with no underlined-->
+         a:link{
+             color: green;
+             background-color: transparent;
+             text-decoration: none;
+         }
+         <!--an visited link will be pink with no underlined-->
+         a:visited{
+             color: pink;
+             background-color: transparent;
+             text-decoration: none;
+         }
+         <!--an active link will be yellow and underlined-->
+         a:active{
+             color: yellow;
+             background-color: transparent;
+             text-decoration: underline;
+         }
+         a:hover{
+             color: rebeccapurple;
+             background-color: transparent;
+             text-decoration: underline;
+         }
+         <!--link can be displayed as a button-->
+         a:link,a:visited{
+             background-color: blue;
+             color: white;
+             padding: 15px 25px;
+             text-align: center;
+             display: inline-block;
+         }
+         a:hover,a:active{
+             background-color: red;
+         }
+    </style>
+    
+</head>
+<body>
+    <!--to send the mail-->
+    <a href="mailto:ankitakamthe43777@gmail.com">send mail</a>
+    <!--button as a link-->
+    <button onclick="about.html">about page</button>
+    <!--link title-->
+    <a href="link" title="link is a provided">visit the link</a>
+   
+</body>
+</html>
