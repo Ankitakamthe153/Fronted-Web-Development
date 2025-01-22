@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery=3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdeliver.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFYGW83EW2RDu250VKaIzap3H661ZH81PoY1FhbGU+68ZpGG7niu7355k7lN"
+    crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous">
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.js' integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfP1YxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="accordion" id="accordionexample">
+            <div class="card">
+                <div class="card-header" id="headingone">
+                    <h2>
+                        <button class="btn btn-link ntn-block text-left" data-toggle="collapse" data-target="#collapseone">angular</button>
+                    </h2>
+
+                </div>
+                <div id="collapseone" class="collapse show" data-parent="#accordionexample">
+                    <div class="card-body">
+                        angular description
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingtwo">
+                    <h2>
+                        <button class="btn btn-link bn-block text-left collapsed" data-toggle="collapse" data-target="#collapsetwo">reactjs</button>
+                    </h2>
+
+                </div>
+                <div id="collapsetwo" class="collapse" data-parent="#accordionexample">
+                    <div class="card-body">
+                        reactjs description
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
