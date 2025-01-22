@@ -1,0 +1,45 @@
+h3{
+    background-color: black;
+    color: blue;
+}
+
+.special{
+    color: green;
+}
+ul{
+    list-style-type: disc;
+}
+
+a:hover{
+    color: green;
+    text-decoration: none;
+    background-color: hotpink;
+}
+
+label#lab{
+    color: red;
+    padding: 5px;
+    background-color: indianred;
+}
+p#ac{
+    color: saddlebrown;
+}
+
+li[class]{
+    color: brown;
+}
+
+li[class='ab']{
+    color: chocolate;
+}
+li span{
+    color:brown;
+    background-color: blue;
+
+}
+
+li[class~='a']{
+    font-size: larger;
+}
+
+/* everything selector */
