@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <script>
+        var employeeid=prompt("enter employee id: ");
+        var employeename=prompt("enter employee name: ");
+        var basicsal=parseInt(prompt("enter basic salary: "));
+        //calculating hra
+        var hra=basicsal*0.02;
+        var pf=basicsal*0.03;
+        var ta=basicsal*0.01;
+        var esi=basicsal*0.25;
+        var grosspay=basicsal+hra+pf+ta+esi+ta;
+        var netpay=grosspay-pf;
+
+        document.write("Salary Break Up Application");
+        document.write("<br>");
+        document.write("-----------------------------------------------------");
+        document.write("<br>");
+        document.write("Employee id :"+employeeid);
+        document.write("<br>");
+        document.write("Employee name :"+employeename);
+        document.write("<br>");
+        document.write("Basic Salary :"+basicsal);
+        document.write("<br>");
+        document.write("HRA :"+hra);
+        document.write("<br>");
+        document.write("PF :"+pf);
+        document.write("<br>");
+        document.write("TA :"+ta);
+        document.write("<br>");
+        document.write("ESI :"+esi);
+        document.write("<br>");
+        document.write("Gross Pay :"+grosspay);
+        document.write("<br>");
+        document.write("Net Pay :"+netpay);
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h2>toggle password visibility</h2>
+    <hr/>
+    <p>
+        <label>password</label>
+        <input type="password" id="passwordinput" value="jones123">
+    </p>
+    <input type="checkbox" onclick="togglepassword()"/>
+    show password
+    <script>
+        function togglepassword(){
+            let element=document.getElementById("passwordinput");
+            if(element.type === "password"){
+                element.type="text";
+            }else{
+                element.type="password";
+            }
+        }
+    </script>
+    
+</body>
+</html>

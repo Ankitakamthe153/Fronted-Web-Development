@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script language="javascript" type="text/javascript">
+       function process(){
+           var option=document.getElementById("operation").value;
+           var num1=parseInt(f.number1.value);
+           var num2=parseInt(f.number2.value);
+           var result=0;
+
+           switch(option){
+               case "add":
+                   result=num1+num2;
+                   f.result.value=result;
+                   console.log("add");
+                   break;
+                case "mul":
+                   result=num1*num2;
+                   f.result.value=result;
+                   console.log("mul");
+                   break;
+                case "cls":
+                   f.number1.value="";
+                   f.number2.value="";
+                   console.log("clear");
+                   
+           }
+       }
+
+   </script>
+</head>
+<body>
+    <form name="f">
+        number 1: <input type="text" name="number1" /><br/>
+        number 2: <input type="text" name="number2" /><br/>
+        operation:<select id="operation" onchange="process()">
+            <option value="">select</option>
+            <option value="add">add</option>
+            <option value="mul">mul</option>
+            <option value="cls">cls</option>
+        </select> 
+        <br />
+        result: <input type="text" name="result" disabled/><br /><br />
+
+    </form>
+    
+</body>
+</html>
